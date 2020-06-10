@@ -1,0 +1,42 @@
+{
+  "name": "api_products",
+  "version": "1.0.0",
+  "description": "Api of products",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist --source-maps",
+    "start": "nodemon src/index.js --exec babel-node",
+    "serve": "node dist/index.js",
+    "clean": "rimraf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedroluis1992/api_products.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedroluis1992/api_products/issues"
+  },
+  "homepage": "https://github.com/pedroluis1992/api_products#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "faker": "^4.1.0",
+    "graphql": "^15.1.0",
+    "graphql-tools": "^6.0.9",
+    "lodash": "^4.17.15",
+    "pg": "^8.2.1",
+    "pg-hstore": "^2.3.3",
+    "rimraf": "^3.0.2",
+    "sequelize": "^5.21.12"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "nodemon": "^2.0.4"
+  }
+}
